@@ -1,11 +1,11 @@
 ---
 # You can also start simply with 'default'
-theme: default
+theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: images/pc-coding.webp
+background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: mcp-in-coding
+title: Welcome to Slidev
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -23,19 +23,23 @@ mdc: true
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
-
-# 设置字体，只使用本地字体
-fonts:
-  provider: none
-  sans: 'LXGW WenKai,PingFang SC, Microsoft YaHei, SimHei, Arial, sans-serif'
-  serif: 'Songti SC, SimSun, Georgia, Times New Roman, serif'
-  mono: 'JetBrains Mono, SF Mono, Monaco, Consolas, Liberation Mono, Menlo, Courier New, monospace'
 ---
 
-# MCP在编程开发中的应用
+# Welcome to Slidev
+
+Presentation slides for developers
 
 <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  按下空格：Let's Go <carbon:arrow-right />
+  Press Space for next page <carbon:arrow-right />
+</div>
+
+<div class="abs-br m-6 text-xl">
+  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
+    <carbon:edit />
+  </button>
+  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+    <carbon:logo-github />
+  </a>
 </div>
 
 <!--
@@ -46,9 +50,9 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
-# 什么是MCP?
+# What is Slidev?
 
-<span v-mark.green="{ at: 1, type: 'circle' }">MCP</span><span v-mark="{ at: 2, color: '#d52753', type: 'underline' }"> （Model Context Protocol，模型上下文协议）</span>
+Slidev is a slides maker and presenter designed for developers, consist of the following features
 
 - 📝 **Text-based** - focus on the content with Markdown, and then style them later
 - 🎨 **Themable** - themes can be shared and re-used as npm packages

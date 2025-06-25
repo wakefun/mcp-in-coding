@@ -3,8 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
+    "build": "slidev build slides.md --base ppt/mcp-in-coding/",
+    "dev": "slidev slides.md --open",
     "export": "slidev export"
   },
   "dependencies": {
